@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet"
+	href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+	<div id="wrapper">
+		<div id="container">
+			<!-- Left Sidebar
+		1. A teacher can see a sidebar list of assignments with title and due date.
+        2. A teacher can select an assignment by clicking on it in the sidebar. -->
+
+			<div id="leftSidebar">
+				<div id="headerSidebar">
+					<h2>Assignments</h2>
+				</div>
+				<div id="mainSidebar">
+					<div class="assignmentsList">
+						<div class="marginNameDue">
+							<span class="assignmentName">The Solar System</span>
+						</div>
+						<div>
+							<span class="assignmentDue">due May 5, 2015</span>
+						</div>
+					</div>
+					<div class="assignmentsList odd">
+						<div class="marginNameDue">
+							<span class="assignmentName">Digestive System</span>
+						</div>
+						<div>
+							<span class="assignmentDue">due May 6, 2015</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 3. A teacher can toggle between assignment details and student submissions for the selected assignment.
+             4. A teacher can expand a student submission in place to see the submission content.. -->
+			<div id="rightBox">
+				<div id="details">
+					<div id="detailsPreTxt">
+						<span>Select an Assignment</span>
+					</div>
+				</div>
+
+
+				<!-- Start for tabs -->
+				<div id="tabs" class="inactive">
+					<ul>
+						<li><a href="#tabs-1">Assignment</a></li>
+						<li><a href="#tabs-2">Submissions</a></li>
+					</ul>
+					<div id="tabs-1">
+						<div class="assignDetailBox">
+							<div class="assignDetailName">
+								<span>The Digestive System</span>
+							</div>
+							<div class="assignDetailDue">
+								<span>Due May 5, 2015</span>
+							</div>
+
+						</div>
+						<div class="assignDetailContent">
+							<p>Choose an organ in the digestive system, and write a short
+								description of what it does.</p>
+						</div>
+					</div>
+					<div id="tabs-2">
+						<div class="assignDetailBox">
+							<div class="submissionList">
+								<div class="imageStudent">
+									<img src="images/anonymousAvator.jpg">
+								</div>
+								<div class="receiptInfo">
+									<div>
+										<span class="rInfoName">Phoebe Terese</span>
+									</div>
+									<div>
+										<span>turned in Sep 6, 2015</span>
+									</div>
+								</div>
+								<div class="arrowDown">
+									<img src="images/arrowDownIcon.fw.png">
+								</div>
+
+							</div>
+							<!-- end of submissionDetailBox -->
+
+							<div class="submissionContent">Made up of three segments,
+								the duodenum, jejunum, and ileum, the small intestine is a long
+								tube loosely coiled in the abdomen (spread out, it would be more
+								than 20 feet long). The small intestine continues the process of
+								breaking down food by using enzymes released by the pancreas and
+								bile from the liver. Bile is a compound that aids in the
+								digestion of fat and eliminates waste products from the blood.
+								Peristalsis (contractions) is also at work in this organ, moving
+								food through and mixing it up with digestive secretions. The
+								duodenum is largely responsible for continuing the process of
+								breaking down food, with the jejunum and ileum being mainly
+								responsible for the absorption of nutrients into the
+								bloodstream.</div>
+							<!-- end of submissionContent -->
+
+							<!-- ---------------------Start Second Submission--------------------------- -->
+							<div class="submissionList">
+								<div class="imageStudent">
+									<img src="images/anonymousAvator.jpg">
+								</div>
+								<div class="receiptInfo">
+									<div>
+										<span class="rInfoName">Phoebe Terese</span>
+									</div>
+									<div>
+										<span>turned in </span><span>Sep 6, 2015</span>
+									</div>
+								</div>
+								<div class="arrowDown">
+									<img src="images/arrowDownIcon.fw.png">
+								</div>
+
+							</div>
+							<!-- end of submissionDetailBox -->
+
+							<div class="submissionContent">Made up of three segments,
+								the duodenum, jejunum, and ileum, the small intestine is a long
+								tube loosely coiled in the abdomen (spread out, it would be more
+								than 20 feet long). The small intestine continues the process of
+								breaking down food by using enzymes released by the pancreas and
+								bile from the liver. Bile is a compound that aids in the
+								digestion of fat and eliminates waste products from the blood.
+								Peristalsis (contractions) is also at work in this organ, moving
+								food through and mixing it up with digestive secretions. The
+								duodenum is largely responsible for continuing the process of
+								breaking down food, with the jejunum and ileum being mainly
+								responsible for the absorption of nutrients into the
+								bloodstream.</div>
+							<!-- end of submissionContent -->
+							<!-- ---------------------End of Second Submission--------------------------- -->
+						</div>
+					</div>
+					<!-- end of tabs-2 -->
+
+				</div>
+				<!-- End for tabs -->
+
+			</div>
+		</div>
+
+		<!-- end of wrapper div -->
+	</div>
+	<!-- end of container div -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/home.js"></script>
+</body>
+</html>

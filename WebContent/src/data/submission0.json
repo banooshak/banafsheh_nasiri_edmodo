@@ -1,0 +1,80 @@
+[  
+   {  
+      "url":"https://api.edmodo.com/assignment_submissions/291288505",
+      "id":291288505,
+      "submitted_at":"2015-06-09T00:22:52.000Z",
+      "assignment_id":24800159,
+      "content":"Made up of three segments, the duodenum, jejunum, and ileum, the small intestine is a long tube loosely coiled in the abdomen (spread out, it would be more than 20 feet long). The small intestine continues the process of breaking down food by using enzymes released by the pancreas and bile from the liver. Bile is a compound that aids in the digestion of fat and eliminates waste products from the blood. Peristalsis (contractions) is also at work in this organ, moving food through and mixing it up with digestive secretions. The duodenum is largely responsible for continuing the process of breaking down food, with the jejunum and ileum being mainly responsible for the absorption of nutrients into the bloodstream.",
+      "attachments":{  
+
+      },
+      "creator":{  
+         "url":"https://api.edmodo.com/users/73244183",
+         "id":73244183,
+         "type":"student",
+         "user_title":null,
+         "first_name":"Phoebe",
+         "last_name":"Terese",
+         "time_zone":"America/Los_Angeles",
+         "utc_offset":-28800,
+         "locale":"en",
+         "username":"phoebeterese123",
+         "avatars":{  
+            "small":"https://api.edmodo.com/users/73244183/avatar?type=small&u=7gfbro2k7wtd13lnsngajrg2j",
+            "large":"https://api.edmodo.com/users/73244183/avatar?type=large&u=7gfbro2k7wtd13lnsngajrg2j"
+         }
+      }
+   },
+   {  
+      "url":"https://api.edmodo.com/assignment_submissions/291288493",
+      "id":291288493,
+      "submitted_at":"2015-06-09T00:22:46.000Z",
+      "assignment_id":24800159,
+      "content":"The esophagus is a muscular tube extending from the pharynx to the stomach. By means of a series of contractions, called peristalsis, the esophagus delivers food to the stomach. Just before the connection to the stomach there is a \"zone of high pressure,\" called the lower esophageal sphincter; this is a \"valve\" meant to keep food from passing backwards into the esophagus.",
+      "attachments":{  
+
+      },
+      "creator":{  
+         "url":"https://api.edmodo.com/users/73244181",
+         "id":73244181,
+         "type":"student",
+         "user_title":null,
+         "first_name":"Dorothy",
+         "last_name":"Ann",
+         "time_zone":"America/Los_Angeles",
+         "utc_offset":-28800,
+         "locale":"en",
+         "username":"dorothyann123",
+         "avatars":{  
+            "small":"https://api.edmodo.com/users/73244181/avatar?type=small&u=3p4w6nscvwraqr4azsr750fap",
+            "large":"https://api.edmodo.com/users/73244181/avatar?type=large&u=3p4w6nscvwraqr4azsr750fap"
+         }
+      }
+   },
+   {  
+      "url":"https://api.edmodo.com/assignment_submissions/291288475",
+      "id":291288475,
+      "submitted_at":"2015-06-09T00:22:40.000Z",
+      "assignment_id":24800159,
+      "content":"The mouth is the beginning of the digestive tract. In fact, digestion starts here as soon as you take the first bite of a meal. Chewing breaks the food into pieces that are more easily digested, while saliva mixes with food to begin the process of breaking it down into a form your body can absorb and use.",
+      "attachments":{  
+
+      },
+      "creator":{  
+         "url":"https://api.edmodo.com/users/73244179",
+         "id":73244179,
+         "type":"student",
+         "user_title":null,
+         "first_name":"Wanda",
+         "last_name":"Li",
+         "time_zone":"America/Los_Angeles",
+         "utc_offset":-28800,
+         "locale":"en",
+         "username":"wandali123",
+         "avatars":{  
+            "small":"https://api.edmodo.com/users/73244179/avatar?type=small&u=2xb4ziv3zfesqx6izjix9hpyo",
+            "large":"https://api.edmodo.com/users/73244179/avatar?type=large&u=2xb4ziv3zfesqx6izjix9hpyo"
+         }
+      }
+   }
+]

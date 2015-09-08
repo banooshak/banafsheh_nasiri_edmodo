@@ -1,0 +1,94 @@
+
+[  
+   {  
+      "url":"https://api.edmodo.com/assignments/24800159",
+      "id":24800159,
+      "title":"The Digestive System",
+      "description":"Choose an organ in the digestive system, and write a short description of what it does.",
+      "created_at":"2015-06-09T00:22:32.000Z",
+      "due_at":"2016-06-09T00:22:32.000Z",
+      "turned_in_count":null,
+      "lock_after_due":null,
+      "message_id":436803081,
+      "creator":{  
+         "url":"https://api.edmodo.com/users/73240721",
+         "id":73240721,
+         "type":"teacher",
+         "user_title":null,
+         "first_name":"Valerie",
+         "last_name":"Frizzle",
+         "time_zone":"America/Los_Angeles",
+         "utc_offset":-28800,
+         "locale":"en",
+         "username":"thefriz123",
+         "avatars":{  
+            "small":"https://api.edmodo.com/users/73240721/avatar?type=small&u=azsdrk9oevcjuqdrxp0rshnql",
+            "large":"https://api.edmodo.com/users/73240721/avatar?type=large&u=azsdrk9oevcjuqdrxp0rshnql"
+         }
+      },
+      "attachments":{  
+
+      },
+      "recipients":{  
+         "groups":[  
+            {  
+               "url":"https://api.edmodo.com/groups/14060299",
+               "id":14060299,
+               "title":"Magic School Bus",
+               "description":null,
+               "num_members":7,
+               "num_small_groups":null,
+               "parent_group_id":null,
+               "archived":false,
+               "parent_read_only":false
+            }
+         ]
+      }
+   },
+   {  
+      "url":"https://api.edmodo.com/assignments/24800143",
+      "id":24800143,
+      "title":"The Solar System",
+      "description":"Please write up your thoughts about our recent field trip the explore the Solar System. Each student should focus on the planet they visited!",
+      "created_at":"2015-06-09T00:20:39.000Z",
+      "due_at":"2016-06-09T00:20:38.000Z",
+      "turned_in_count":null,
+      "lock_after_due":null,
+      "message_id":436802665,
+      "creator":{  
+         "url":"https://api.edmodo.com/users/73240721",
+         "id":73240721,
+         "type":"teacher",
+         "user_title":null,
+         "first_name":"Valerie",
+         "last_name":"Frizzle",
+         "time_zone":"America/Los_Angeles",
+         "utc_offset":-28800,
+         "locale":"en",
+         "username":"thefriz123",
+         "avatars":{  
+            "small":"https://api.edmodo.com/users/73240721/avatar?type=small&u=azsdrk9oevcjuqdrxp0rshnql",
+            "large":"https://api.edmodo.com/users/73240721/avatar?type=large&u=azsdrk9oevcjuqdrxp0rshnql"
+         }
+      },
+      "attachments":{  
+
+      },
+      "recipients":{  
+         "groups":[  
+            {  
+               "url":"https://api.edmodo.com/groups/14060299",
+               "id":14060299,
+               "title":"Magic School Bus",
+               "description":null,
+               "num_members":7,
+               "num_small_groups":null,
+               "parent_group_id":null,
+               "archived":false,
+               "parent_read_only":false
+            }
+         ]
+      }
+   }
+]
+
