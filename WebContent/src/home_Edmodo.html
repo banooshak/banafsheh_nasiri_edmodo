@@ -19,24 +19,9 @@
 				<div id="headerSidebar">
 					<h2>Assignments</h2>
 				</div>
-				<div id="mainSidebar">
-					<div class="assignmentsList">
-						<div class="marginNameDue">
-							<span class="assignmentName">The Solar System</span>
-						</div>
-						<div>
-							<span class="assignmentDue">due May 5, 2015</span>
-						</div>
-					</div>
-					<div class="assignmentsList odd">
-						<div class="marginNameDue">
-							<span class="assignmentName">Digestive System</span>
-						</div>
-						<div>
-							<span class="assignmentDue">due May 6, 2015</span>
-						</div>
-					</div>
-				</div>
+				<input id="createAssignmentButton" type="button"
+					value="Create Assignment">
+				<div id="mainSidebar"></div>
 			</div>
 			<!-- 3. A teacher can toggle between assignment details and student submissions for the selected assignment.
              4. A teacher can expand a student submission in place to see the submission content.. -->
@@ -57,90 +42,19 @@
 					<div id="tabs-1">
 						<div class="assignDetailBox">
 							<div class="assignDetailName">
-								<span>The Digestive System</span>
+								<span></span>
 							</div>
 							<div class="assignDetailDue">
-								<span>Due May 5, 2015</span>
+								<span></span>
 							</div>
 
 						</div>
 						<div class="assignDetailContent">
-							<p>Choose an organ in the digestive system, and write a short
-								description of what it does.</p>
+							<p></p>
 						</div>
 					</div>
 					<div id="tabs-2">
-						<div class="assignDetailBox">
-							<div class="submissionList">
-								<div class="imageStudent">
-									<img src="images/anonymousAvator.jpg">
-								</div>
-								<div class="receiptInfo">
-									<div>
-										<span class="rInfoName">Phoebe Terese</span>
-									</div>
-									<div>
-										<span>turned in Sep 6, 2015</span>
-									</div>
-								</div>
-								<div class="arrowDown">
-									<img src="images/arrowDownIcon.fw.png">
-								</div>
-
-							</div>
-							<!-- end of submissionDetailBox -->
-
-							<div class="submissionContent">Made up of three segments,
-								the duodenum, jejunum, and ileum, the small intestine is a long
-								tube loosely coiled in the abdomen (spread out, it would be more
-								than 20 feet long). The small intestine continues the process of
-								breaking down food by using enzymes released by the pancreas and
-								bile from the liver. Bile is a compound that aids in the
-								digestion of fat and eliminates waste products from the blood.
-								Peristalsis (contractions) is also at work in this organ, moving
-								food through and mixing it up with digestive secretions. The
-								duodenum is largely responsible for continuing the process of
-								breaking down food, with the jejunum and ileum being mainly
-								responsible for the absorption of nutrients into the
-								bloodstream.</div>
-							<!-- end of submissionContent -->
-
-							<!-- ---------------------Start Second Submission--------------------------- -->
-							<div class="submissionList">
-								<div class="imageStudent">
-									<img src="images/anonymousAvator.jpg">
-								</div>
-								<div class="receiptInfo">
-									<div>
-										<span class="rInfoName">Phoebe Terese</span>
-									</div>
-									<div>
-										<span>turned in </span><span>Sep 6, 2015</span>
-									</div>
-								</div>
-								<div class="arrowDown">
-									<img src="images/arrowDownIcon.fw.png">
-								</div>
-
-							</div>
-							<!-- end of submissionDetailBox -->
-
-							<div class="submissionContent">Made up of three segments,
-								the duodenum, jejunum, and ileum, the small intestine is a long
-								tube loosely coiled in the abdomen (spread out, it would be more
-								than 20 feet long). The small intestine continues the process of
-								breaking down food by using enzymes released by the pancreas and
-								bile from the liver. Bile is a compound that aids in the
-								digestion of fat and eliminates waste products from the blood.
-								Peristalsis (contractions) is also at work in this organ, moving
-								food through and mixing it up with digestive secretions. The
-								duodenum is largely responsible for continuing the process of
-								breaking down food, with the jejunum and ileum being mainly
-								responsible for the absorption of nutrients into the
-								bloodstream.</div>
-							<!-- end of submissionContent -->
-							<!-- ---------------------End of Second Submission--------------------------- -->
-						</div>
+						<div class="assignDetailBox"></div>
 					</div>
 					<!-- end of tabs-2 -->
 
@@ -151,6 +65,31 @@
 		</div>
 
 		<!-- end of wrapper div -->
+	</div>
+	<div id="createAssignment" title="Create new Assignment">
+		<div id="dialogWrapper">
+			<div class="dialogLabel">
+				<span>Title: </span>
+			</div>
+			<div class="dialogRow">
+				<input id="newAssignmentTitle" type="text" required>
+			</div>
+			<div class="dialogLabel">
+				<span>Due at: </span>
+			</div>
+			<div class="dialogRow">
+				<input id="newAssignmentDueDate" type="date" required>
+			</div>
+			<div class="dialogLabel">
+				<span>Description: </span>
+			</div>
+			<div class="dialogRow">
+				<textarea id="newAssignmentDesc" cols="30" rows="2" required></textarea>
+			</div>
+		</div>
+	</div>
+	<div id="validationDialog" title="All three fields are mandatory">
+		<h3>All three fields are mandatory!</h3>
 	</div>
 	<!-- end of container div -->
 	<script

@@ -9,9 +9,13 @@ $(document).ready(init);
 
 function init() {
 	loadAssignments();
+	initDialog();
 }
 
 function initListeners() {
+	$(".assignmentsList").unbind("hover");
+	$(".assignmentsList").unbind("click");
+
 	$(".assignmentsList").hover(function() {
 		$(this).addClass("myHover");
 	}, function() {
@@ -38,6 +42,11 @@ function renderTab(title, dueDate, desc, creatorID, assignmentID) {
 	$("#tabs-1 div div.assignDetailName span").html(title);
 	$("#tabs-1 div div.assignDetailDue span").html("Due " + dueDate);
 	$("#tabs-1 div.assignDetailContent p").html(desc);
+
+	if (assignmentID == undefined) {
+		$("#tabs-2 .assignDetailBox").empty();
+		return;
+	}
 
 	var url = "https://api.edmodo.com/assignment_submissions?assignment_id="
 			+ assignmentID + "&assignment_creator_id=" + creatorID
@@ -128,26 +137,91 @@ function renderAssignments(data) {
 	var leftBar = $("#mainSidebar");
 	leftBar.empty();
 	for (var i = 0; i < data.length; i++) {
-		var oddClass = "";
-		if (i % 2 == 1) {
-			oddClass = "odd";
-		}
-		var assignmentBox = $("<div class='assignmentsList " + oddClass
-				+ "'></div>");
-		assignmentBox
-				.append("<div class='marginNameDue'><span class='assignmentName'>"
-						+ data[i].title + "</span></div>");
-		var dueDate = getFormattedDate(data[i].due_at);
+		var assignmentBox = renderAssignmentBox(data[i].title, data[i].due_at,
+				data[i].description);
 
-		assignmentBox.append("<div><span class='assignmentDue'>Due " + dueDate
-				+ "</span></div>");
-		assignmentBox.data("title", data[i].title);
-		assignmentBox.data("desc", data[i].description);
-		assignmentBox.data("dueDate", dueDate);
 		assignmentBox.data("creatorID", data[i].creator.id);
 		assignmentBox.data("assigmentID", data[i].id);
 		leftBar.append(assignmentBox);
 	}
 
 	initListeners();
+}
+
+function renderAssignmentBox(title, due_at, desc) {
+	var oddClass = "";
+	if ($("#mainSidebar .assignmentsList").length >= 1) {
+		oddClass = "odd";
+	}
+
+	var assignmentBox = $("<div class='assignmentsList " + oddClass
+			+ "'></div>");
+	assignmentBox
+			.append("<div class='marginNameDue'><span class='assignmentName'>"
+					+ title + "</span></div>");
+	var dueDate = getFormattedDate(due_at);
+
+	assignmentBox.append("<div><span class='assignmentDue'>Due " + dueDate
+			+ "</span></div>");
+
+	assignmentBox.data("title", title);
+	assignmentBox.data("desc", desc);
+	assignmentBox.data("dueDate", dueDate);
+
+	return assignmentBox;
+}
+
+function createAssignment() {
+	var leftBar = $("#mainSidebar");
+	var assignmentBox = renderAssignmentBox($("#newAssignmentTitle").val(), $(
+			"#newAssignmentDueDate").val(), $("#newAssignmentDesc").val());
+
+	leftBar.append(assignmentBox);
+	initListeners();
+}
+
+function initDialog() {
+	var dialog = $("#createAssignment").dialog(
+			{
+				autoOpen : false,
+				height : 300,
+				width : 550,
+				modal : true,
+				buttons : {
+					"Create Assignment" : function() {
+						if ($("#newAssignmentTitle").val().length == 0
+								|| $("#newAssignmentDueDate").val().length == 0
+								|| $("#newAssignmentDesc").val().length == 0) {
+							errorDialog.dialog("open");
+							return;
+						}
+						createAssignment();
+						$(this).dialog("close");
+					},
+					Cancel : function() {
+						$(this).dialog("close");
+					}
+				},
+				close : function() {
+					$("#newAssignmentTitle").val("");
+					$("#newAssignmentDueDate").val("");
+					$("#newAssignmentDesc").val("");
+				}
+			});
+
+	var errorDialog = $("#validationDialog").dialog({
+		autoOpen : false,
+		height : 200,
+		width : 550,
+		modal : true,
+		buttons : {
+			"Close" : function() {
+				$(this).dialog("close");
+			}
+		}
+	});
+
+	$("#createAssignmentButton").click(function() {
+		dialog.dialog("open");
+	});
 }

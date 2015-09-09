@@ -187,3 +187,33 @@ span.rInfoName {
 .ui-widget-content {
 	border: none;
 }
+
+#createAssignment {
+	display: none;
+}
+
+#createAssignmentButton {
+	margin: 10px;
+}
+
+#dialogWrapper {
+	padding: 10px;
+}
+
+.dialogRow {
+	margin: 5px;
+	display: inline-block;
+	width: 65%;
+	float: left;
+}
+
+.dialogLabel {
+	margin: 5px;
+	width: 30%;
+	float: left;
+	display: inline-block;
+}
+
+#validationDialog,#createAssignment {
+	display: none;
+}
